@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 const app = express();
-app.use(express.json()); // Postman se data lene ke liye
+app.use(express.json()); 
 
 // Database Connection
 mongoose.connect(process.env.MONGODB_URI)
@@ -16,8 +16,6 @@ mongoose.connect(process.env.MONGODB_URI)
 
 // Test Route
 app.get('/', (req, res) => res.send("Bookstore API is Live!"));
-
-// app.js mein mongoose connection ke niche ye add karein:
 
 const bookRoutes = require('./routes/bookRoutes');
 

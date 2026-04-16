@@ -1,6 +1,5 @@
 const Book = require('../models/Book');
 
-// 1. Nayi Book add karne ka logic
 exports.createBook = async (req, res) => {
     try {
         const newBook = new Book(req.body);
@@ -11,7 +10,6 @@ exports.createBook = async (req, res) => {
     }
 };
 
-// 2. Saari Books dekhne ka logic
 exports.getAllBooks = async (req, res) => {
     try {
         const books = await Book.find();
@@ -21,9 +19,6 @@ exports.getAllBooks = async (req, res) => {
     }
 };
 
-// Pehle wale code ke niche ye add karein:
-
-// 3. Kisi ek book ko ID se dhoondna
 exports.getBookById = async (req, res) => {
     try {
         const book = await Book.findById(req.params.id);
@@ -34,7 +29,6 @@ exports.getBookById = async (req, res) => {
     }
 };
 
-// 4. Book update karna
 exports.updateBook = async (req, res) => {
     try {
         const updatedBook = await Book.findByIdAndUpdate(req.params.id, req.body, { new: true });
@@ -44,7 +38,6 @@ exports.updateBook = async (req, res) => {
     }
 };
 
-// 5. Book delete karna
 exports.deleteBook = async (req, res) => {
     try {
         await Book.findByIdAndDelete(req.params.id);

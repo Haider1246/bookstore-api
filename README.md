@@ -23,7 +23,7 @@ A professional Backend API built with Node.js, Express, and MongoDB Atlas. This 
 | DELETE| `/books/:id` | Remove a book |
 
 ## ⚙️ Setup Instructions
-1. Clone the repository: `git clone [your-repo-link]`
+1. Clone the repository: `git clone https://github.com/Haider1246/bookstore-api/tree/main`
 2. Install dependencies: `npm install`
 3. Create a `.env` file and add your `MONGODB_URI`.
 4. Start the server: `node app.js`

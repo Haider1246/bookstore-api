@@ -5,7 +5,7 @@ A professional Backend API built with Node.js, Express, and MongoDB Atlas. This 
 
 ## 🔗 Live Links
 - **Live API:** [https://bookstore-api-4.onrender.com]
-- **GitHub Repository:** [Yahan apna GitHub link paste karein]
+- **GitHub Repository:** [https://github.com/Haider1246/bookstore-api/tree/main]
 
 ## 🛠️ Tech Stack
 - **Backend:** Node.js, Express.js
